@@ -1,0 +1,15 @@
+{
+  "name": "todo-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "[LFei0801]",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^2.3.8"
+  }
+}

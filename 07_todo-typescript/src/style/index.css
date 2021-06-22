@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+h2{
+  color: black;
+  margin-bottom: 10px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+}
+
+input,button:focus{
+  outline: none;
+}
+
+.app{
+  width: 80%;
+  min-height: 80%;
+  border:solid 3px black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, .6);
+  box-shadow: 4px 4px 4px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app .input{
+  width: 80%;
+  height: 40px;
+  transform: translateY(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.input input{
+  width: 96%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+.input button{
+  margin-left: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+  border-radius: 50%;
+}
+
+.todo-list{
+  transform: translateY(50px);
+  width: 80%;
+  font-size: 20px;
+}
+
+.todo-item:not(:first-child){
+  margin-top: 10px;
+}
+
+.todo-list .todo-item{
+  border: solid 1px beige;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+}
+
+.todo-item input{
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+
+.todo-list .todo-item button{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
