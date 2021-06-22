@@ -1,0 +1,40 @@
+{
+  /*
+  *tsconfig.json 是ts编译器的配置文件，ts编译器可以根据此配置文件编译文件
+  * 
+  * include 用来指定哪些文件需要被编译
+            路径：**表示任意目录
+                  * 表示任意文件
+  * exclude 不需要被编译的文件目录
+            默认值：["node_modules","bower_compoents","jspm_package"]
+    compilerOptions: 编译的选项：
+            target: 指定编译成js的版本
+            module: 模块系统的规范
+            outDir: 编译后文件放在何处
+            outFile: 将代码合并为一个文件
+            allowJs:是否对js代码进行编译
+            checkJs: 是否检查js代码符合代码规范
+            removeComments: 是否移除注释
+            noEmit: 不生成编译后的文件
+            noEmitOnError: 当有错误时不生成编译后的文件
+            alwaysStrict: 用来设置编译后的文件是否开启严格模式
+            noImplicitAny: 不允许隐式any类型
+            noImplicitThis: 不允许不明确的this
+            strictNullChecks: 不允许有隐式空值
+            strict:true 开启所有严格模式
+  */
+  "include": ["./src/**/*"],
+  "exclude": ["./src/hello/**/*"],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2015",
+    "outDir": "./dist",
+    "allowJs": true,
+    "strict": true,
+    "noEmitOnError": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true
+  }
+}
